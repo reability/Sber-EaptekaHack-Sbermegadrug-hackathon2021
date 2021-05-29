@@ -6,6 +6,8 @@ target 'sbermegadrug' do
   use_frameworks!
 
   # Pods for sbermegadrug
+  
+  pod 'Firebase/Database'
 
   pod 'Kingfisher'
   pod 'SnapKit'
