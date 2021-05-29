@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3AE493076169C6AA522159 /* Pods_sbermegadrug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664D1783574BC6C521B8424A /* Pods_sbermegadrug.framework */; };
+		2D9CA0402661917700E523C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9CA03F2661917700E523C8 /* AppDelegate.swift */; };
+		2D9CA0442661917700E523C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9CA0432661917700E523C8 /* ViewController.swift */; };
+		2D9CA0472661917700E523C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D9CA0452661917700E523C8 /* Main.storyboard */; };
+		2D9CA0492661917900E523C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D9CA0482661917900E523C8 /* Assets.xcassets */; };
+		2D9CA04C2661917900E523C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D9CA04A2661917900E523C8 /* LaunchScreen.storyboard */; };
+		2D9CA063266216D000E523C8 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9CA062266216D000E523C8 /* FeedViewController.swift */; };
+		2D9CA06B26621C5000E523C8 /* TabPullUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9CA06A26621C5000E523C8 /* TabPullUp.swift */; };
+		2D9CA06E26621D8800E523C8 /* TabPullUpOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9CA06D26621D8800E523C8 /* TabPullUpOutput.swift */; };
+		2D9CA071266225CB00E523C8 /* MasterAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9CA070266225CB00E523C8 /* MasterAssembly.swift */; };
+		2D9CA0762662265F00E523C8 /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9CA0752662265F00E523C8 /* MasterView.swift */; };
+		2D9CA07A2662273500E523C8 /* FeedAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9CA0792662273500E523C8 /* FeedAssembly.swift */; };
+		2D9CA07D2662282F00E523C8 /* TabPullInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9CA07C2662282F00E523C8 /* TabPullInjection.swift */; };
+		2D9CA08426622E4000E523C8 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9CA08326622E4000E523C8 /* MasterViewController.swift */; };
+		2D9CA08926623BDF00E523C8 /* OfferCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9CA08826623BDF00E523C8 /* OfferCollectionViewCell.swift */; };
+		2D9CA08D2662408700E523C8 /* OfferCollectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9CA08C2662408700E523C8 /* OfferCollectionModel.swift */; };
+		2D9CA0942662414700E523C8 /* FeedEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9CA0932662414700E523C8 /* FeedEntity.swift */; };
+		2D9CA09726624FA700E523C8 /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9CA09626624FA700E523C8 /* CatalogViewController.swift */; };
+		2D9CA09C266251F600E523C8 /* MedItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9CA09B266251F600E523C8 /* MedItemTableViewCell.swift */; };
+		2D9CA09F266252A900E523C8 /* CatalogItemEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9CA09E266252A900E523C8 /* CatalogItemEntity.swift */; };
+		2D9CA0A32662542500E523C8 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9CA0A22662542500E523C8 /* PopUpViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04F79508BBB914A11D84750E /* Pods-sbermegadrug.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sbermegadrug.release.xcconfig"; path = "Target Support Files/Pods-sbermegadrug/Pods-sbermegadrug.release.xcconfig"; sourceTree = "<group>"; };
+		2D9CA03C2661917700E523C8 /* sbermegadrug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sbermegadrug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D9CA03F2661917700E523C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2D9CA0432661917700E523C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2D9CA0462661917700E523C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2D9CA0482661917900E523C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D9CA04B2661917900E523C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2D9CA04D2661917900E523C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D9CA062266216D000E523C8 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		2D9CA06A26621C5000E523C8 /* TabPullUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPullUp.swift; sourceTree = "<group>"; };
+		2D9CA06D26621D8800E523C8 /* TabPullUpOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPullUpOutput.swift; sourceTree = "<group>"; };
+		2D9CA070266225CB00E523C8 /* MasterAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterAssembly.swift; sourceTree = "<group>"; };
+		2D9CA0752662265F00E523C8 /* MasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
+		2D9CA0792662273500E523C8 /* FeedAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAssembly.swift; sourceTree = "<group>"; };
+		2D9CA07C2662282F00E523C8 /* TabPullInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPullInjection.swift; sourceTree = "<group>"; };
+		2D9CA08326622E4000E523C8 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		2D9CA08826623BDF00E523C8 /* OfferCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferCollectionViewCell.swift; sourceTree = "<group>"; };
+		2D9CA08C2662408700E523C8 /* OfferCollectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferCollectionModel.swift; sourceTree = "<group>"; };
+		2D9CA0932662414700E523C8 /* FeedEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedEntity.swift; sourceTree = "<group>"; };
+		2D9CA09626624FA700E523C8 /* CatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
+		2D9CA09B266251F600E523C8 /* MedItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedItemTableViewCell.swift; sourceTree = "<group>"; };
+		2D9CA09E266252A900E523C8 /* CatalogItemEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogItemEntity.swift; sourceTree = "<group>"; };
+		2D9CA0A22662542500E523C8 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		664D1783574BC6C521B8424A /* Pods_sbermegadrug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sbermegadrug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAE5B676AC45AA5E6AAA7E13 /* Pods-sbermegadrug.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sbermegadrug.debug.xcconfig"; path = "Target Support Files/Pods-sbermegadrug/Pods-sbermegadrug.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D9CA0392661917700E523C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D3AE493076169C6AA522159 /* Pods_sbermegadrug.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D9CA0332661917700E523C8 = {
+			isa = PBXGroup;
+			children = (
+				2D9CA03E2661917700E523C8 /* sbermegadrug */,
+				2D9CA03D2661917700E523C8 /* Products */,
+				33223F88BD4A9578B18DB7BD /* Pods */,
+				9D5B0D87C4B6D8877B993EC7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2D9CA03D2661917700E523C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D9CA03C2661917700E523C8 /* sbermegadrug.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D9CA03E2661917700E523C8 /* sbermegadrug */ = {
+			isa = PBXGroup;
+			children = (
+				2D9CA05F2661932E00E523C8 /* Business */,
+				2D9CA05E2661932200E523C8 /* Presentation */,
+				2D9CA05D2661931A00E523C8 /* Resourses */,
+				2D9CA0432661917700E523C8 /* ViewController.swift */,
+				2D9CA0452661917700E523C8 /* Main.storyboard */,
+				2D9CA04A2661917900E523C8 /* LaunchScreen.storyboard */,
+			);
+			path = sbermegadrug;
+			sourceTree = "<group>";
+		};
+		2D9CA05D2661931A00E523C8 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				2D9CA03F2661917700E523C8 /* AppDelegate.swift */,
+				2D9CA0482661917900E523C8 /* Assets.xcassets */,
+				2D9CA04D2661917900E523C8 /* Info.plist */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		2D9CA05E2661932200E523C8 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				2D9CA0A12662541800E523C8 /* PopUp */,
+				2D9CA06526621C1A00E523C8 /* TabPullUp */,
+				2D9CA061266216B400E523C8 /* Feed */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		2D9CA05F2661932E00E523C8 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				2D9CA0732662264800E523C8 /* Core */,
+				2D9CA06726621C3400E523C8 /* Common */,
+				2D9CA0602661935E00E523C8 /* Assembly */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		2D9CA0602661935E00E523C8 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				2D9CA070266225CB00E523C8 /* MasterAssembly.swift */,
+				2D9CA0792662273500E523C8 /* FeedAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		2D9CA061266216B400E523C8 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				2D9CA062266216D000E523C8 /* FeedViewController.swift */,
+				2D9CA0932662414700E523C8 /* FeedEntity.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		2D9CA06526621C1A00E523C8 /* TabPullUp */ = {
+			isa = PBXGroup;
+			children = (
+				2D9CA06626621C2B00E523C8 /* Catalog */,
+			);
+			path = TabPullUp;
+			sourceTree = "<group>";
+		};
+		2D9CA06626621C2B00E523C8 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				2D9CA09626624FA700E523C8 /* CatalogViewController.swift */,
+				2D9CA09E266252A900E523C8 /* CatalogItemEntity.swift */,
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
+		2D9CA06726621C3400E523C8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2D9CA06826621C3A00E523C8 /* UI */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2D9CA06826621C3A00E523C8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2D9CA08626623BB100E523C8 /* Cells */,
+				2D9CA06926621C3E00E523C8 /* TabPullUp */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		2D9CA06926621C3E00E523C8 /* TabPullUp */ = {
+			isa = PBXGroup;
+			children = (
+				2D9CA06A26621C5000E523C8 /* TabPullUp.swift */,
+				2D9CA06D26621D8800E523C8 /* TabPullUpOutput.swift */,
+				2D9CA07C2662282F00E523C8 /* TabPullInjection.swift */,
+			);
+			path = TabPullUp;
+			sourceTree = "<group>";
+		};
+		2D9CA0732662264800E523C8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2D9CA0742662264F00E523C8 /* MasterView */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2D9CA0742662264F00E523C8 /* MasterView */ = {
+			isa = PBXGroup;
+			children = (
+				2D9CA0752662265F00E523C8 /* MasterView.swift */,
+				2D9CA08326622E4000E523C8 /* MasterViewController.swift */,
+			);
+			path = MasterView;
+			sourceTree = "<group>";
+		};
+		2D9CA08626623BB100E523C8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2D9CA09A266251E400E523C8 /* MedItemTable */,
+				2D9CA08726623BB700E523C8 /* OfferCollection */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2D9CA08726623BB700E523C8 /* OfferCollection */ = {
+			isa = PBXGroup;
+			children = (
+				2D9CA08826623BDF00E523C8 /* OfferCollectionViewCell.swift */,
+				2D9CA08C2662408700E523C8 /* OfferCollectionModel.swift */,
+			);
+			path = OfferCollection;
+			sourceTree = "<group>";
+		};
+		2D9CA09A266251E400E523C8 /* MedItemTable */ = {
+			isa = PBXGroup;
+			children = (
+				2D9CA09B266251F600E523C8 /* MedItemTableViewCell.swift */,
+			);
+			path = MedItemTable;
+			sourceTree = "<group>";
+		};
+		2D9CA0A12662541800E523C8 /* PopUp */ = {
+			isa = PBXGroup;
+			children = (
+				2D9CA0A22662542500E523C8 /* PopUpViewController.swift */,
+			);
+			path = PopUp;
+			sourceTree = "<group>";
+		};
+		33223F88BD4A9578B18DB7BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AAE5B676AC45AA5E6AAA7E13 /* Pods-sbermegadrug.debug.xcconfig */,
+				04F79508BBB914A11D84750E /* Pods-sbermegadrug.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9D5B0D87C4B6D8877B993EC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				664D1783574BC6C521B8424A /* Pods_sbermegadrug.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D9CA03B2661917700E523C8 /* sbermegadrug */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D9CA0502661917900E523C8 /* Build configuration list for PBXNativeTarget "sbermegadrug" */;
+			buildPhases = (
+				D393D26825A61F8F072569F0 /* [CP] Check Pods Manifest.lock */,
+				2D9CA0382661917700E523C8 /* Sources */,
+				2D9CA0392661917700E523C8 /* Frameworks */,
+				2D9CA03A2661917700E523C8 /* Resources */,
+				46B5DAE9CE28BF79C27A35E9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sbermegadrug;
+			productName = sbermegadrug;
+			productReference = 2D9CA03C2661917700E523C8 /* sbermegadrug.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D9CA0342661917700E523C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					2D9CA03B2661917700E523C8 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 2D9CA0372661917700E523C8 /* Build configuration list for PBXProject "sbermegadrug" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D9CA0332661917700E523C8;
+			productRefGroup = 2D9CA03D2661917700E523C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D9CA03B2661917700E523C8 /* sbermegadrug */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D9CA03A2661917700E523C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D9CA04C2661917900E523C8 /* LaunchScreen.storyboard in Resources */,
+				2D9CA0492661917900E523C8 /* Assets.xcassets in Resources */,
+				2D9CA0472661917700E523C8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46B5DAE9CE28BF79C27A35E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sbermegadrug/Pods-sbermegadrug-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sbermegadrug/Pods-sbermegadrug-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sbermegadrug/Pods-sbermegadrug-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D393D26825A61F8F072569F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sbermegadrug-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D9CA0382661917700E523C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D9CA09726624FA700E523C8 /* CatalogViewController.swift in Sources */,
+				2D9CA08D2662408700E523C8 /* OfferCollectionModel.swift in Sources */,
+				2D9CA08426622E4000E523C8 /* MasterViewController.swift in Sources */,
+				2D9CA0442661917700E523C8 /* ViewController.swift in Sources */,
+				2D9CA07A2662273500E523C8 /* FeedAssembly.swift in Sources */,
+				2D9CA063266216D000E523C8 /* FeedViewController.swift in Sources */,
+				2D9CA0762662265F00E523C8 /* MasterView.swift in Sources */,
+				2D9CA0402661917700E523C8 /* AppDelegate.swift in Sources */,
+				2D9CA08926623BDF00E523C8 /* OfferCollectionViewCell.swift in Sources */,
+				2D9CA09F266252A900E523C8 /* CatalogItemEntity.swift in Sources */,
+				2D9CA0A32662542500E523C8 /* PopUpViewController.swift in Sources */,
+				2D9CA071266225CB00E523C8 /* MasterAssembly.swift in Sources */,
+				2D9CA06B26621C5000E523C8 /* TabPullUp.swift in Sources */,
+				2D9CA09C266251F600E523C8 /* MedItemTableViewCell.swift in Sources */,
+				2D9CA07D2662282F00E523C8 /* TabPullInjection.swift in Sources */,
+				2D9CA06E26621D8800E523C8 /* TabPullUpOutput.swift in Sources */,
+				2D9CA0942662414700E523C8 /* FeedEntity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2D9CA0452661917700E523C8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D9CA0462661917700E523C8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2D9CA04A2661917900E523C8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D9CA04B2661917900E523C8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D9CA04E2661917900E523C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2D9CA04F2661917900E523C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D9CA0512661917900E523C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAE5B676AC45AA5E6AAA7E13 /* Pods-sbermegadrug.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 42Q82T7ZTH;
+				INFOPLIST_FILE = "$(SRCROOT)/sbermegadrug/Resourses/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = whatever.whatever.sbermegadrug;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D9CA0522661917900E523C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04F79508BBB914A11D84750E /* Pods-sbermegadrug.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 42Q82T7ZTH;
+				INFOPLIST_FILE = "$(SRCROOT)/sbermegadrug/Resourses/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = whatever.whatever.sbermegadrug;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D9CA0372661917700E523C8 /* Build configuration list for PBXProject "sbermegadrug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D9CA04E2661917900E523C8 /* Debug */,
+				2D9CA04F2661917900E523C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D9CA0502661917900E523C8 /* Build configuration list for PBXNativeTarget "sbermegadrug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D9CA0512661917900E523C8 /* Debug */,
+				2D9CA0522661917900E523C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2D9CA0342661917700E523C8 /* Project object */;
+}

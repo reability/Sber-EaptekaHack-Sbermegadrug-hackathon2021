@@ -1,0 +1,15 @@
+
+platform :ios, '10.0'
+
+target 'sbermegadrug' do
+
+  use_frameworks!
+
+  # Pods for sbermegadrug
+
+  pod 'Kingfisher'
+  pod 'SnapKit'
+  pod 'Swinject'
+  pod 'Moya'
+
+end
