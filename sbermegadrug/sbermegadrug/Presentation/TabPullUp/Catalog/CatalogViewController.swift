@@ -36,6 +36,8 @@ final class CatalogViewController: UIViewController {
         view.addSubview(tableView)
         view.addSubview(searchBar)
         
+        tableView.separatorStyle = .none
+        
         searchBar.snp.makeConstraints { maker in
             maker.top.equalToSuperview()
             maker.leading.equalToSuperview()
@@ -65,7 +67,7 @@ final class CatalogViewController: UIViewController {
             maker.edges.equalToSuperview()
         }
     }
-    
+    		
 }
 
 extension CatalogViewController: UITableViewDelegate, UITableViewDataSource {
@@ -81,6 +83,13 @@ extension CatalogViewController: UITableViewDelegate, UITableViewDataSource {
         cell.setUp(model)
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = CartViewController()
+        DispatchQueue.main.async {
+            self.present(vc, animated: true, completion: nil)
+        }
     }
     
 }
