@@ -16,3 +16,12 @@ struct CatalogItemEntity {
     
     
 }
+
+extension CatalogItemEntity {
+    
+    static var stub: [CatalogItemEntity] {
+        return [
+        ]
+    }
+    
+}

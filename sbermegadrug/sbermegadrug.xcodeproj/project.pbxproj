@@ -28,6 +28,14 @@
 		2D9CA09C266251F600E523C8 /* MedItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9CA09B266251F600E523C8 /* MedItemTableViewCell.swift */; };
 		2D9CA09F266252A900E523C8 /* CatalogItemEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9CA09E266252A900E523C8 /* CatalogItemEntity.swift */; };
 		2D9CA0A32662542500E523C8 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9CA0A22662542500E523C8 /* PopUpViewController.swift */; };
+		2D9CA0A826627D2500E523C8 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9CA0A726627D2500E523C8 /* CartViewController.swift */; };
+		2D9CA0BC266280AB00E523C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D9CA0BB266280AB00E523C8 /* GoogleService-Info.plist */; };
+		2D9CA0C02662817800E523C8 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9CA0BF2662817800E523C8 /* FirebaseService.swift */; };
+		2D9CA0C5266288C100E523C8 /* CartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9CA0C4266288C100E523C8 /* CartModel.swift */; };
+		2D9CA0C8266288FA00E523C8 /* CartHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9CA0C7266288FA00E523C8 /* CartHeaderTableViewCell.swift */; };
+		2D9CA0CB2662897700E523C8 /* CartItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9CA0CA2662897700E523C8 /* CartItemTableViewCell.swift */; };
+		2D9CA0CF2662899100E523C8 /* CartItemTableViewFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9CA0CE2662899100E523C8 /* CartItemTableViewFooter.swift */; };
+		3AC0A28626631FBF00A4C391 /* MedInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC0A28526631FBF00A4C391 /* MedInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +62,14 @@
 		2D9CA09B266251F600E523C8 /* MedItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedItemTableViewCell.swift; sourceTree = "<group>"; };
 		2D9CA09E266252A900E523C8 /* CatalogItemEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogItemEntity.swift; sourceTree = "<group>"; };
 		2D9CA0A22662542500E523C8 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		2D9CA0A726627D2500E523C8 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		2D9CA0BB266280AB00E523C8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2D9CA0BF2662817800E523C8 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		2D9CA0C4266288C100E523C8 /* CartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartModel.swift; sourceTree = "<group>"; };
+		2D9CA0C7266288FA00E523C8 /* CartHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		2D9CA0CA2662897700E523C8 /* CartItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemTableViewCell.swift; sourceTree = "<group>"; };
+		2D9CA0CE2662899100E523C8 /* CartItemTableViewFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemTableViewFooter.swift; sourceTree = "<group>"; };
+		3AC0A28526631FBF00A4C391 /* MedInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedInfoViewController.swift; sourceTree = "<group>"; };
 		664D1783574BC6C521B8424A /* Pods_sbermegadrug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sbermegadrug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE5B676AC45AA5E6AAA7E13 /* Pods-sbermegadrug.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sbermegadrug.debug.xcconfig"; path = "Target Support Files/Pods-sbermegadrug/Pods-sbermegadrug.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +107,7 @@
 		2D9CA03E2661917700E523C8 /* sbermegadrug */ = {
 			isa = PBXGroup;
 			children = (
+				2D9CA0BB266280AB00E523C8 /* GoogleService-Info.plist */,
 				2D9CA05F2661932E00E523C8 /* Business */,
 				2D9CA05E2661932200E523C8 /* Presentation */,
 				2D9CA05D2661931A00E523C8 /* Resourses */,
@@ -114,6 +131,8 @@
 		2D9CA05E2661932200E523C8 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				3AC0A28426631F9100A4C391 /* MedicineInfo */,
+				2D9CA0A626627D0800E523C8 /* Cart */,
 				2D9CA0A12662541800E523C8 /* PopUp */,
 				2D9CA06526621C1A00E523C8 /* TabPullUp */,
 				2D9CA061266216B400E523C8 /* Feed */,
@@ -196,6 +215,7 @@
 		2D9CA0732662264800E523C8 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				2D9CA0BE2662816A00E523C8 /* Service */,
 				2D9CA0742662264F00E523C8 /* MasterView */,
 			);
 			path = Core;
@@ -213,6 +233,7 @@
 		2D9CA08626623BB100E523C8 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				2D9CA0C3266288B200E523C8 /* CartCells */,
 				2D9CA09A266251E400E523C8 /* MedItemTable */,
 				2D9CA08726623BB700E523C8 /* OfferCollection */,
 			);
@@ -244,6 +265,33 @@
 			path = PopUp;
 			sourceTree = "<group>";
 		};
+		2D9CA0A626627D0800E523C8 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				2D9CA0A726627D2500E523C8 /* CartViewController.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		2D9CA0BE2662816A00E523C8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2D9CA0BF2662817800E523C8 /* FirebaseService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2D9CA0C3266288B200E523C8 /* CartCells */ = {
+			isa = PBXGroup;
+			children = (
+				2D9CA0C4266288C100E523C8 /* CartModel.swift */,
+				2D9CA0C7266288FA00E523C8 /* CartHeaderTableViewCell.swift */,
+				2D9CA0CA2662897700E523C8 /* CartItemTableViewCell.swift */,
+				2D9CA0CE2662899100E523C8 /* CartItemTableViewFooter.swift */,
+			);
+			path = CartCells;
+			sourceTree = "<group>";
+		};
 		33223F88BD4A9578B18DB7BD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,6 +299,14 @@
 				04F79508BBB914A11D84750E /* Pods-sbermegadrug.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		3AC0A28426631F9100A4C391 /* MedicineInfo */ = {
+			isa = PBXGroup;
+			children = (
+				3AC0A28526631FBF00A4C391 /* MedInfoViewController.swift */,
+			);
+			path = MedicineInfo;
 			sourceTree = "<group>";
 		};
 		9D5B0D87C4B6D8877B993EC7 /* Frameworks */ = {
@@ -321,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D9CA04C2661917900E523C8 /* LaunchScreen.storyboard in Resources */,
+				2D9CA0BC266280AB00E523C8 /* GoogleService-Info.plist in Resources */,
 				2D9CA0492661917900E523C8 /* Assets.xcassets in Resources */,
 				2D9CA0472661917700E523C8 /* Main.storyboard in Resources */,
 			);
@@ -375,22 +432,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D9CA0C8266288FA00E523C8 /* CartHeaderTableViewCell.swift in Sources */,
+				2D9CA0C02662817800E523C8 /* FirebaseService.swift in Sources */,
 				2D9CA09726624FA700E523C8 /* CatalogViewController.swift in Sources */,
 				2D9CA08D2662408700E523C8 /* OfferCollectionModel.swift in Sources */,
 				2D9CA08426622E4000E523C8 /* MasterViewController.swift in Sources */,
 				2D9CA0442661917700E523C8 /* ViewController.swift in Sources */,
+				2D9CA0C5266288C100E523C8 /* CartModel.swift in Sources */,
+				3AC0A28626631FBF00A4C391 /* MedInfoViewController.swift in Sources */,
 				2D9CA07A2662273500E523C8 /* FeedAssembly.swift in Sources */,
 				2D9CA063266216D000E523C8 /* FeedViewController.swift in Sources */,
 				2D9CA0762662265F00E523C8 /* MasterView.swift in Sources */,
 				2D9CA0402661917700E523C8 /* AppDelegate.swift in Sources */,
 				2D9CA08926623BDF00E523C8 /* OfferCollectionViewCell.swift in Sources */,
+				2D9CA0CB2662897700E523C8 /* CartItemTableViewCell.swift in Sources */,
 				2D9CA09F266252A900E523C8 /* CatalogItemEntity.swift in Sources */,
+				2D9CA0CF2662899100E523C8 /* CartItemTableViewFooter.swift in Sources */,
 				2D9CA0A32662542500E523C8 /* PopUpViewController.swift in Sources */,
 				2D9CA071266225CB00E523C8 /* MasterAssembly.swift in Sources */,
 				2D9CA06B26621C5000E523C8 /* TabPullUp.swift in Sources */,
 				2D9CA09C266251F600E523C8 /* MedItemTableViewCell.swift in Sources */,
 				2D9CA07D2662282F00E523C8 /* TabPullInjection.swift in Sources */,
 				2D9CA06E26621D8800E523C8 /* TabPullUpOutput.swift in Sources */,
+				2D9CA0A826627D2500E523C8 /* CartViewController.swift in Sources */,
 				2D9CA0942662414700E523C8 /* FeedEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

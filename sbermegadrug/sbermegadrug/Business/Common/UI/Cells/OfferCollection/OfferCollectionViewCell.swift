@@ -52,7 +52,8 @@ final class OfferCollectionViewCell: UICollectionViewCell {
         contentView.addSubview(offerTitleLabel)
         contentView.addSubview(priceLabel)
         
-        contentView.backgroundColor = .yellow
+        contentView.backgroundColor = .white
+        contentView.layer.cornerRadius = 10.0
         
         offerImageView.snp.makeConstraints { maker in
             maker.leading.equalToSuperview().offset(12.0)

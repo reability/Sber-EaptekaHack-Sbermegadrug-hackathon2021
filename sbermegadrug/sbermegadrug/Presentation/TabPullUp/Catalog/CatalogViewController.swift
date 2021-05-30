@@ -11,6 +11,8 @@ import UIKit
 
 final class CatalogViewController: UIViewController {
     
+    var service: FirebaseService = FirebaseServiceImp()
+    
     var model: [CatalogItemEntity]!
     var filteredModel: [CatalogItemEntity]!
     
@@ -24,11 +26,48 @@ final class CatalogViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        model = []
-        filteredModel = []
+        model = CatalogItemEntity.stub
+        filteredModel = model
         tableView.register(MedIteTableViewCell.self, forCellReuseIdentifier: "cell")
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        view.addSubview(tableView)
+        view.addSubview(searchBar)
+        
+        tableView.separatorStyle = .none
+        
+        searchBar.snp.makeConstraints { maker in
+            maker.top.equalToSuperview()
+            maker.leading.equalToSuperview()
+            maker.trailing.equalToSuperview()
+        }
+        
+        tableView.snp.makeConstraints { maker in
+            maker.leading.equalToSuperview()
+            maker.trailing.equalToSuperview()
+            maker.top.equalTo(searchBar.snp.bottom)
+            maker.bottom.equalToSuperview()
+        }
+        
+        service.getMeds { [weak self] result in
+            DispatchQueue.main.async {
+                self?.model = result
+                self?.filteredModel = result
+                self?.tableView.reloadData()
+            }
+        }
+        
     }
     
+    func openIn(tabView: UIView) {
+        tabView.addSubview(self.view)
+        view.snp.makeConstraints { maker in
+            maker.edges.equalToSuperview()
+        }
+    }
+    		
 }
 
 extension CatalogViewController: UITableViewDelegate, UITableViewDataSource {
@@ -41,8 +80,16 @@ extension CatalogViewController: UITableViewDelegate, UITableViewDataSource {
         let model = filteredModel[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! MedIteTableViewCell
+        cell.setUp(model)
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = CartViewController()
+        DispatchQueue.main.async {
+            self.present(vc, animated: true, completion: nil)
+        }
     }
     
 }

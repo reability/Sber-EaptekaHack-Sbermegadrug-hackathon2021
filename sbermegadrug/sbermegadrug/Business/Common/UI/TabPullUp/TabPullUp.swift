@@ -43,14 +43,18 @@ final class TabPullUp: UIViewController, TabPullUpInjected {
         return $0
     }(UIView())
     
+    lazy private var button: UIButton = {
+        $0.addTarget(self, action: #selector(didTapedButton), for: .touchUpInside)
+        $0.setTitle("Кнопка", for: .normal)
+        return $0
+    }(UIButton())
+    
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        frozen = true
         view.backgroundColor = .clear
-        //view.isUserInteractionEnabled = false
-        //headerView.isUserInteractionEnabled = true
         
         setupPan()
     }
@@ -58,7 +62,7 @@ final class TabPullUp: UIViewController, TabPullUpInjected {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        initialTopOffset = superheight - 20.0
+        initialTopOffset = superheight - 30.0
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -75,7 +79,25 @@ final class TabPullUp: UIViewController, TabPullUpInjected {
         view.addSubview(pullUpView)
         pullUpView.addSubview(headerView)
         pullUpView.addSubview(pullUpContentView)
+        pullUpView.addSubview(button)
         layout()
+    }
+    
+    @objc func didTapedButton() {
+        openCatalog()
+        frozen = false
+    }
+    
+    func openCatalog() {
+        let vc = CatalogViewController()
+        self.addChild(vc)
+        vc.openIn(tabView: self.pullUpContentView)
+        self.view.layoutIfNeeded()
+        currentTopOffset = 80.0
+        self.topConstraint?.update(offset: 80.0)
+        UIView.animate(withDuration: 2.0) {
+            self.view.layoutIfNeeded()
+        }
     }
 
     
@@ -96,7 +118,16 @@ private extension TabPullUp {
             currentTopOffset += translation
             topConstraint?.update(offset: currentTopOffset)
         case .ended:
-            break
+            if currentTopOffset < 80.0 {
+                currentTopOffset = 80.0
+                topConstraint?.update(offset: currentTopOffset)
+            } else if currentTopOffset < superheight / 2.0 {
+                currentTopOffset = 80.0
+                topConstraint?.update(offset: currentTopOffset)
+            } else {
+                currentTopOffset = superheight - 30.0
+                topConstraint?.update(offset: currentTopOffset)
+            }
         default:
             break
         }
@@ -153,6 +184,11 @@ private extension TabPullUp {
             maker.leading.equalToSuperview()
             maker.trailing.equalToSuperview()
             maker.bottom.equalToSuperview()
+        }
+        
+        button.snp.makeConstraints { maker in
+            maker.top.equalToSuperview()
+            maker.centerX.equalToSuperview()
         }
         
         
