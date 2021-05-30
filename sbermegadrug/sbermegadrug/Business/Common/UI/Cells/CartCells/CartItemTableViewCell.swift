@@ -35,6 +35,7 @@ final class CartItemTableViewCell: UITableViewCell {
     }(UIImageView())
     
     lazy private var medTitleLabel: UILabel = {
+        $0.numberOfLines = 0
         return $0
     }(UILabel())
     
@@ -89,7 +90,7 @@ final class CartItemTableViewCell: UITableViewCell {
         cardHolderView.addSubview(medTitleLabel)
         medTitleLabel.snp.makeConstraints { maker in
             maker.leading.equalTo(medImageView.snp.trailing).offset(16.0)
-            maker.trailing.equalToSuperview()
+            maker.trailing.equalToSuperview().offset(-4.0)
             maker.top.equalToSuperview().offset(8.0)
         }
         cardHolderView.addSubview(priceLabel)

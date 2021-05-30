@@ -18,6 +18,7 @@ final class CardItemTableViewFooterTableViewCell: UITableViewCell {
         $0.backgroundColor = .blue
         $0.layer.cornerRadius = 8.0
         $0.setTitle("Оформить", for: .normal)
+        $0.addTarget(self, action: #selector(didTapped), for: .touchUpInside)
         return $0
     }(UIButton())
     
@@ -38,6 +39,21 @@ final class CardItemTableViewFooterTableViewCell: UITableViewCell {
             maker.leading.equalToSuperview().offset(40.0)
             maker.trailing.equalToSuperview().offset(-40.0)
             maker.bottom.equalToSuperview()
+        }
+    }
+    
+    @objc func didTapped() {
+        sleep(UInt32(3.0))
+        let vc = PopUpViewController()
+        let keyWindow = UIApplication.shared.windows.filter{$0.isKeyWindow}.first
+        
+        if var topController = keyWindow?.rootViewController {
+            while let presentedViewController = topController.presentedViewController {
+                topController = presentedViewController
+            }
+            DispatchQueue.main.async {
+                topController.present(vc, animated: true, completion: nil)
+            }
         }
     }
     

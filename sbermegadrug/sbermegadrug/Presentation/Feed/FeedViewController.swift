@@ -42,7 +42,7 @@ final class FeedViewController: UIViewController, TabPullUpOutput {
         view.addSubview(bonusValueLabel)
         view.addSubview(offerCollectionView)
         
-        view.backgroundColor = .red
+        view.backgroundColor = .white
         setupText()
         
         layout()
@@ -97,6 +97,8 @@ extension FeedViewController: UICollectionViewDelegate, UICollectionViewDataSour
         cell.setup(offer)
         return cell
     }
+    
+    
     
 }
 

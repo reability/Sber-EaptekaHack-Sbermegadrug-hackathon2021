@@ -12,6 +12,15 @@ final class CartViewController: UIViewController {
     
     var model: [CartModel] = []
     
+    func updateModel(with catalogItem: CatalogItemEntity) {
+        self.model = [
+            CartHeaderTableViewCellModel(),
+            CartItemTableViewCellModel(name: catalogItem.title, imageString: catalogItem.imageString, price: catalogItem.price, amount: 1),
+            CartItemTableViewFooterCellModel()
+        ]
+        tableView.reloadData()
+    }
+    
     lazy private var tableView: UITableView = {
         return $0
     }(UITableView())
@@ -19,10 +28,10 @@ final class CartViewController: UIViewController {
     override func viewDidLoad() {
         
         self.model = [
-            CartHeaderTableViewCellModel(),
-            CartItemTableViewCellModel(name: "fd", imageString: "https://cdn.eapteka.ru/upload/offer_photo/999/55/1_6d483b0739b1eafa7dc9961622946611.jpeg?_cvc=1622209430", price: 100, amount: 1),
-            CartItemTableViewCellModel(name: "fd", imageString: "https://cdn.eapteka.ru/upload/offer_photo/999/55/1_6d483b0739b1eafa7dc9961622946611.jpeg?_cvc=1622209430", price: 100, amount: 1),
-            CartItemTableViewFooterCellModel()
+            //CartHeaderTableViewCellModel(),
+            //CartItemTableViewCellModel(name: "fd", imageString: "https://cdn.eapteka.ru/upload/offer_photo/999/55/1_6d483b0739b1eafa7dc9961622946611.jpeg?_cvc=1622209430", price: 100, amount: 1),
+            //CartItemTableViewCellModel(name: "fd", imageString: "https://cdn.eapteka.ru/upload/offer_photo/999/55/1_6d483b0739b1eafa7dc9961622946611.jpeg?_cvc=1622209430", price: 100, amount: 1),
+           // CartItemTableViewFooterCellModel()
         ]
         
         view.addSubview(tableView)

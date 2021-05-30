@@ -37,6 +37,7 @@ final class CatalogViewController: UIViewController {
         view.addSubview(searchBar)
         
         tableView.separatorStyle = .none
+        tableView.backgroundColor = .white
         
         searchBar.snp.makeConstraints { maker in
             maker.top.equalToSuperview()
@@ -87,9 +88,16 @@ extension CatalogViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = CartViewController()
+        let model = filteredModel[indexPath.row]
         DispatchQueue.main.async {
-            self.present(vc, animated: true, completion: nil)
+            self.present(vc, animated: true) {
+                vc.updateModel(with: model)
+            }
         }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 56.0
     }
     
 }

@@ -52,7 +52,7 @@ final class OfferCollectionViewCell: UICollectionViewCell {
         contentView.addSubview(offerTitleLabel)
         contentView.addSubview(priceLabel)
         
-        contentView.backgroundColor = .yellow
+        contentView.backgroundColor = .white
         
         offerImageView.snp.makeConstraints { maker in
             maker.leading.equalToSuperview().offset(12.0)

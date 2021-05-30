@@ -11,6 +11,11 @@ import UIKit
 final class MedIteTableViewCell: UITableViewCell {
     
     lazy private var mainTitleLabelView: UILabel = {
+        $0.numberOfLines = 0
+        $0.textColor = .black
+        $0.backgroundColor = .white
+        
+        
         return $0
     }(UILabel())
     
@@ -28,6 +33,7 @@ final class MedIteTableViewCell: UITableViewCell {
         
         mainTitleLabelView.snp.makeConstraints { maker in
             maker.leading.equalToSuperview().offset(10.0)
+            maker.trailing.equalToSuperview().offset(-40.0)
         }
     }
     

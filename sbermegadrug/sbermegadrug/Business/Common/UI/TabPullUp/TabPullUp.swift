@@ -28,13 +28,17 @@ final class TabPullUp: UIViewController, TabPullUpInjected {
     // MARK: - View
     
     lazy private var headerView: UIView = {
-        $0.backgroundColor = .blue
+        $0.backgroundColor = .white
+        $0.layer.shadowColor = UIColor.black.cgColor
+        $0.layer.shadowOpacity = 1
+        $0.layer.shadowOffset = .zero
+        $0.layer.shadowRadius = 4
         
         return $0
     }(UIView())
     
     lazy private var pullUpView: UIView = {
-        $0.backgroundColor = .green
+        $0.backgroundColor = .white
         
         return $0
     }(UIView())
@@ -45,6 +49,7 @@ final class TabPullUp: UIViewController, TabPullUpInjected {
     
     lazy private var button: UIButton = {
         $0.addTarget(self, action: #selector(didTapedButton), for: .touchUpInside)
+        $0.setTitleColor(.black, for: .normal)
         $0.setTitle("Кнопка", for: .normal)
         return $0
     }(UIButton())
@@ -62,7 +67,7 @@ final class TabPullUp: UIViewController, TabPullUpInjected {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        initialTopOffset = superheight - 30.0
+        initialTopOffset = superheight - 60.0
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -93,8 +98,8 @@ final class TabPullUp: UIViewController, TabPullUpInjected {
         self.addChild(vc)
         vc.openIn(tabView: self.pullUpContentView)
         self.view.layoutIfNeeded()
-        currentTopOffset = 80.0
-        self.topConstraint?.update(offset: 80.0)
+        currentTopOffset = 120.0
+        self.topConstraint?.update(offset: 120.0)
         UIView.animate(withDuration: 2.0) {
             self.view.layoutIfNeeded()
         }
@@ -118,14 +123,14 @@ private extension TabPullUp {
             currentTopOffset += translation
             topConstraint?.update(offset: currentTopOffset)
         case .ended:
-            if currentTopOffset < 80.0 {
-                currentTopOffset = 80.0
+            if currentTopOffset < 120.0 {
+                currentTopOffset = 120.0
                 topConstraint?.update(offset: currentTopOffset)
             } else if currentTopOffset < superheight / 2.0 {
-                currentTopOffset = 80.0
+                currentTopOffset = 120.0
                 topConstraint?.update(offset: currentTopOffset)
             } else {
-                currentTopOffset = superheight - 30.0
+                currentTopOffset = superheight - 60.0
                 topConstraint?.update(offset: currentTopOffset)
             }
         default:
