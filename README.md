@@ -6,7 +6,7 @@
 
 ## Повторяйте покупки - зарабатывайте была
 
-<img src="https://github.com/reability/MCHProject2021Mosru/blob/main/src/filtr.gif" width="250">
+<img src="https://github.com/reability/sbermegadrug/blob/main/src/screen.gif" width="250">
 
 Ищите нужные товары и оформляйте доставку на дом. При повторном заказе товара вы зарабатываете стрик. При определенных значениях стрика вы получаете бонусные баллы, которые можете потратить на определенные товары
 
