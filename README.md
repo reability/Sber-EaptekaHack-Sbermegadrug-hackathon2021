@@ -1,4 +1,4 @@
-# sbermegadrug
+# SberEAPTEKAHackProject2021
 
 ![alt text](https://github.com/reability/sbermegadrug/blob/main/src/tiser.png?raw=true)
 
@@ -18,3 +18,6 @@
 Используемые библиотеки: SnapKit(верстка экранов), Kingfisher (ассинхронная загрузка картинок), PullUp (Собственноручно написан). 
 
 
+## Firebase
+
+Серверная сторона приложения реализована на обычном firebase-realtimedatabse
