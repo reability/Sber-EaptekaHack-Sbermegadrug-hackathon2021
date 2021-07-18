@@ -1,6 +1,6 @@
 # sbermegadrug
 
-![alt text](https://github.com/reability/MCHProject2021Mosru/blob/main/src/headers.png?raw=true)
+![alt text](https://github.com/reability/sbermegadrug/blob/main/src/tiser.png?raw=true)
 
 Проект команды "Rx не нужен" специально для  EAPTEKA hack 2021 (https://eaptekahack.ru/)
 
